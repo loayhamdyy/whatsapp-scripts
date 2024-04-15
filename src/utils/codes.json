@@ -1,0 +1,207 @@
+{
+  "0": {
+    "description": "We were unable to authenticate the app user.",
+    "possibleSolution": "Typically this means the included access token has expired, been invalidated, or the app user has changed a setting to prevent all apps from accessing their data. We recommend that you get a new access token."
+  },
+  "3": {
+    "description": "API Method",
+    "possibleSolution": "Capability or permissions issue. Use the access token debugger to verify that your app has been granted the permissions required by the endpoint. See Troubleshooting."
+  },
+  "10": {
+    "description": "Permission Denied",
+    "possibleSolution": "Permission is either not granted or has been removed. Use the access token debugger to verify that your app has been granted the permissions required by the endpoint. See Troubleshooting. Ensure that the phone number used to set the business public key is allowlisted."
+  },
+  "190": {
+    "description": "Access token has expired",
+    "possibleSolution": "Your access token has expired. Get a new access token."
+  },
+  "200": {
+    "description": "API Permission",
+    "possibleSolution": "Permission is either not granted or has been removed. Use the access token debugger to verify that your app has been granted the permissions required by the endpoint. See Troubleshooting."
+  },
+  "299": {
+    "description": "API Permission",
+    "possibleSolution": "Permission is either not granted or has been removed. Use the access token debugger to verify that your app has been granted the permissions required by the endpoint. See Troubleshooting."
+  },
+  "4": {
+    "description": "API Too Many Calls",
+    "possibleSolution": "The app has reached its API call rate limit. Load the app in the App Dashboard and view the Application Rate Limit section to verify that the app has reached its rate limit. If it has, try again later or reduce the frequency or amount of API queries the app is making."
+  },
+  "80007": {
+    "description": "Rate limit issues",
+    "possibleSolution": "The WhatsApp Business Account has reached its rate limit. See WhatsApp Business Account Rate Limits. Try again later or reduce the frequency or amount of API queries the app is making."
+  },
+  "130429": {
+    "description": "Rate limit hit",
+    "possibleSolution": "Cloud API message throughput has been reached. The app has reached the API's throughput limit. See Throughput. Try again later or reduce the frequency with which the app sends messages."
+  },
+  "131048": {
+    "description": "Spam rate limit hit",
+    "possibleSolution": "Message failed to send because there are restrictions on how many messages can be sent from this phone number. This may be because too many previous messages were blocked or flagged as spam. Check your quality status in the WhatsApp Manager and see the Quality-Based Rate Limits documentation for more information."
+  },
+  "131056": {
+    "description": "(Business Account, Consumer Account) pair rate limit hit",
+    "possibleSolution": "Too many messages sent from the sender phone number to the same recipient phone number in a short period of time. Wait and retry the operation, if you intend to send messages to the same phone number. You can still send messages to a different phone number without waiting."
+  },
+  "133016": {
+    "description": "Account register deregister rate limit exceeded",
+    "possibleSolution": "Registration or Deregistration failed because there were too many attempts for this phone number in a short period of time The business phone number is being blocked because it has reached its registration/deregistration attempt limit. Try again once the number is unblocked. See 'Limitations' in the Registration document."
+  },
+  "368": {
+    "description": "Temporarily blocked for policies violations",
+    "possibleSolution": "The WhatsApp Business Account associated with the app has been restricted or disabled for violating a platform policy. See the Policy Enforcement document to learn about policy violations and how to resolve them."
+  },
+  "131031": {
+    "description": "Account has been locked",
+    "possibleSolution": "The WhatsApp Business Account associated with the app has been restricted or disabled for violating a platform policy, or we were unable to verify data included in the request against data set on the WhatsApp Business Account (e.g, the two-step pin included in the request is incorrect). See the Policy Enforcement document to learn about policy violations and how to resolve them. You can also use the Health Status API, which may provide additional insight into the reason or reasons for the account lock."
+  },
+
+  "1": {
+    "description": "API Unknown",
+    "possibleSolution": "Invalid request or possible server error. Check the WhatsApp Business Platform Status page to see API status information. If there are no server outages, check the endpoint reference and verify that your request is formatted correctly and meets all endpoint requirements."
+  },
+  "2": {
+    "description": "API Service",
+    "possibleSolution": "Temporary due to downtime or due to being overloaded. Check the WhatsApp Business Platform Status page to see API status information before trying again."
+  },
+  "33": {
+    "description": "Parameter value is not valid",
+    "possibleSolution": "The business phone number has been deleted. Verify that the business phone number is correct."
+  },
+  "100": {
+    "description": "Invalid parameter",
+    "possibleSolution": "The request included one or more unsupported or misspelled parameters. See the endpoint's reference to determine which parameters are supported and how they are spelled. Ensure when setting the business public key, it is a valid 2048-bit RSA public key in PEM format. Ensure there is no mismatch between the phone number id you are registering and a previously stored phone number id."
+  },
+  "130472": {
+    "description": "User's number is part of an experiment",
+    "possibleSolution": "Message was not sent as part of an experiment. See Marketing Message Experiment."
+  },
+  "131000": {
+    "description": "Something went wrong",
+    "possibleSolution": "Message failed to send due to an unknown error. When setting a business public key, it either failed to calculate the signature, call the GraphQL endpoint, or the GraphQL endpoint returned an error. Try again. If the error persists, open a Direct Support ticket."
+  },
+  "131005": {
+    "description": "Access denied",
+    "possibleSolution": "Permission is either not granted or has been removed. Use the access token debugger to verify that your app has been granted the permissions required by the endpoint. See Troubleshooting."
+  },
+  "131008": {
+    "description": "Required parameter is missing",
+    "possibleSolution": "The request is missing a required parameter. See the endpoint's reference to determine which parameters are required."
+  },
+  "131009": {
+    "description": "Parameter value is not valid",
+    "possibleSolution": "One or more parameter values are invalid. See the endpoint's reference to determine which values are supported for each parameter, and see Phone Numbers to learn how to add a phone number to a WhatsApp Business Account."
+  },
+  "131016": {
+    "description": "Service unavailable",
+    "possibleSolution": "A service is temporarily unavailable. Check the WhatsApp Business Platform Status page to see API status information before trying again."
+  },
+  "131021": {
+    "description": "Recipient cannot be sender",
+    "possibleSolution": "Sender and recipient phone number is the same. Send a message to a phone number different from the sender."
+  },
+  "131026": {
+    "description": "Message Undeliverable",
+    "possibleSolution": "Unable to deliver message. Reasons can include: The recipient phone number is not a WhatsApp phone number. Sending an authentication template to a WhatsApp user who has a +91 country calling code (India). Authentication templates currently cannot be sent to WhatsApp users in India. Recipient has not accepted our new Terms of Service and Privacy Policy. Recipient using an old WhatsApp version; must use the following WhatsApp version or greater: Android: 2.21.15.15 SMBA: 2.21.15.15 iOS: 2.21.170.4 SMBI: 2.21.170.4 KaiOS: 2.2130.10 Web: 2.2132.6 The message was not delivered to create a high quality user experience. See Per-User Marketing Template Message Limits. Using a non-WhatsApp communication method, ask the WhatsApp user to: Confirm that they can actually send a message to your WhatsApp business phone number. Confirm that they have accepted our latest Terms of Service (Settings > Help, or Settings > Application information will prompt them to accept the latest terms/policies if they haven't done so already) Update to the latest version of the WhatsApp client."
+  },
+  "131042": {
+    "description": "Business eligibility payment issue",
+    "possibleSolution": "There was an error related to your payment method. See About Billing For Your WhatsApp Business Account and verify that you have set up billing correctly. Common problems: Payment account is not attached to a WhatsApp Business Account Credit line is over the limit Credit line (Payment Account) not set or active WhatsApp Business Account is deleted WhatsApp Business Account is suspended Timezone not set Currency not set MessagingFor request (On Behalf Of) is pending or declined Exceeded conversation free tier threshold without a valid payment method"
+  },
+  "131045": {
+    "description": "Incorrect certificate",
+    "possibleSolution": "Message failed to send due to a phone number registration error. Register the phone number before trying again."
+  },
+  "131047": {
+    "description": "Re-engagement message",
+    "possibleSolution": "More than 24 hours have passed since the recipient last replied to the sender number. Send the recipient a business-initiated message using a message template instead."
+  },
+  "131051": {
+    "description": "Unsupported message type",
+    "possibleSolution": "Unsupported message type. See Messages for supported message types before trying again with a supported message type."
+  },
+  "131052": {
+    "description": "Media download error",
+    "possibleSolution": "Unable to download the media sent by the user. We were unable to download the media for one or more reasons, such as an unsupported media type. Refer to the error.error_data.details value for more information about why we were unable to download the media. Ask the WhatsApp user to send you the media file using a non-WhatsApp method."
+  },
+  "131053": {
+    "description": "Media upload error",
+    "possibleSolution": "Unable to upload the media used in the message. We were unable to upload the media for one or more reasons, such as an unsupported media type. Refer to the error.error_data.details value for more information about why we were unable to upload the media. We recommend that you inspect any media files that are causing errors and confirm that they are in fact supported. For example, in UNIX you can use file inspection via the command line to determine its MIME type: file -I rejected-file.mov You can then confirm if its MIME type is listed in our list of supported media types. For more reliable performance when sending media, refer to Media HTTP Caching and uploading the media."
+  },
+  "131057": {
+    "description": "Account in maintenance mode",
+    "possibleSolution": "Buiness Account is in maintenance mode The WhatsApp Business Account is in maintenance mode. One reason for this could be that the account is undergoing a throughput upgrade."
+  },
+  "132000": {
+    "description": "Template Param Count Mismatch",
+    "possibleSolution": "The number of variable parameter values included in the request did not match the number of variable parameters defined in the template. See Message Template Guidelines and make sure the request includes all of the variable parameter values that have been defined in the template."
+  },
+  "132001": {
+    "description": "Template does not exist",
+    "possibleSolution": "The template does not exist in the specified language or the template has not been approved. Make sure your template has been approved and the template name and language locale are correct. Please ensure you follow message template guidelines."
+  },
+  "132005": {
+    "description": "Template Hydrated Text Too Long",
+    "possibleSolution": "Translated text is too long. Check the WhatsApp Manager to verify that your template has been translated. See Quality Rating and Template Status."
+  },
+  "132007": {
+    "description": "Template Format Character Policy Violated",
+    "possibleSolution": "Template content violates a WhatsApp policy. See Rejection Reasons to determine possible reasons for violation."
+  },
+  "132012": {
+    "description": "Template Parameter Format Mismatch",
+    "possibleSolution": "Variable parameter values formatted incorrectly. The variable parameter values included in the request are not using the format specified in the template. See Message Template Guidelines."
+  },
+  "132015": {
+    "description": "Template is Paused",
+    "possibleSolution": "Template is paused due to low quality so it cannot be sent in a template message. Edit the template to improve its quality and try again once it is approved."
+  },
+  "132016": {
+    "description": "Template is Disabled",
+    "possibleSolution": "Template has been paused too many times due to low quality and is now permanently disabled. Create a new template with different content."
+  },
+  "132068": {
+    "description": "Flow is blocked",
+    "possibleSolution": "Flow is in blocked state. Correct the Flow"
+  },
+  "132069": {
+    "description": "Flow is throttled",
+    "possibleSolution": "Flow is in throttled state and 10 messages using this flow were already sent in the last hour. Correct the Flow"
+  },
+  "133000": {
+    "description": "Incomplete Deregistration",
+    "possibleSolution": "A previous deregistration attempt failed. Deregister the number again before registering."
+  },
+  "133004": {
+    "description": "Server Temporarily Unavailable",
+    "possibleSolution": "Server is temporarily unavailable. Check the WhatsApp Business Platform Status page to see API status information and check the response details value before trying again."
+  },
+  "133005": {
+    "description": "Two step verification PIN Mismatch",
+    "possibleSolution": "Two-step verification PIN incorrect. Verify that the two-step verification PIN included in the request is correct. To reset the two-step verification PIN: Disable two-step verification. Send a POST request that includes the new PIN to the Phone Number endpoint."
+  },
+  "133006": {
+    "description": "Phone number re-verification needed",
+    "possibleSolution": "Phone number needs to be verified before registering. Verify the phone number before registering it."
+  },
+  "133008": {
+    "description": "Too Many two step verification PIN Guesses",
+    "possibleSolution": "Too many two-step verification PIN guesses for this phone number. Try again after the amount of time specified in the details response value."
+  },
+  "133009": {
+    "description": "Two step verification PIN Guessed Too Fast",
+    "possibleSolution": "Two-step verification PIN was entered too quickly. Check the details response value before trying again."
+  },
+  "133010": {
+    "description": "Phone number Not Registered",
+    "possibleSolution": "Phone number not registered on the WhatsApp Business Platform. Register the phone number before trying again."
+  },
+  "133015": {
+    "description": "Please wait a few minutes before attempting to register this phone number",
+    "possibleSolution": "The phone number you are attempting to register was recently deleted, and deletion has not yet completed. Wait 5 minutes before re-trying the request."
+  },
+  "135000": {
+    "description": "Generic user error",
+    "possibleSolution": "Message failed to send because of an unknown error with your request parameters. See the endpoint's reference to determine if you are querying the endpoint using the correct syntax. Contact customer support if you continue receiving this error code in response."
+  }
+}
